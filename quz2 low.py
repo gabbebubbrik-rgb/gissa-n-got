@@ -3,6 +3,8 @@ x=input("yo choom vad heter du type shit? ")
 print(f"tjenare {x} välkommen till mitt program eller något. ")
 z=random.randint(1,10)
 cc=input("gissa ett nummer mellan 1 och 10 ")
+if cc>10:
+    print("mellan 1 och 10 ditt miffo")
 if z==cc:
     print("du hade low key rätt")
 else:
