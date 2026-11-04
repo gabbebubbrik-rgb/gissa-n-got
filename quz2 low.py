@@ -1,31 +1,19 @@
 import random
-x=input("yo choom vad heter du type shit? ")
+x=input("yo choom vad heter du type shit?\n ")
 print(f"tjenare {x} välkommen till mitt program eller något. ")
 z=random.randint(1,10)
-cc=int(input("gissa ett nummer mellan 1 och 10 "))
-if cc>10:
-    print("mellan 1 och 10 ditt miffo")
-if z==cc:
-    print("du hade low key rätt")
-else:
-    print("du e retarded")
-if z!=cc:
+cc=int(input("välj ett tal 1 till 10\n "))
+if cc>z:
+    print("mellan 1 och 10 ditt retard ")
+while cc!=z:
+    i=0
     print("försök igen")
-cc=int(input("gissa ett nummer mellan 1 och 10 "))
-if cc>10:
-    print("mellan 1 och 10 ditt miffo")
-if z==cc:
-    print("du hade low key rätt")
-else:
-    print("du e retarded")
-if z!=cc:
-    print("försök igen")
-cc=int(input("gissa ett nummer mellan 1 och 10 "))
-if cc>10:
-    print("mellan 1 och 10 ditt miffo")
-if z==cc:
-    print("du hade low key rätt")
-else:
-    print("du e ultra retarded")
+    cc=int(input("välj ett tal 1 till 10\n "))
+    i=i+1 
+    if i==3:
+        print("du använde alla försök")
+        break
+if cc==z:
+    print(" rätt type shit")
 
     
